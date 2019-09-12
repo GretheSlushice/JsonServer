@@ -33,9 +33,9 @@ namespace JsonServer
             {
                 string line = sr.ReadLine();
                 Console.WriteLine(line);
-                Car newCar = JsonConvert.DeserializeObject<Car>(line);
+                AutoSale dealer = JsonConvert.DeserializeObject<AutoSale>(line);
 
-                Console.WriteLine(newCar);
+                Console.WriteLine(dealer);
             }
         }
     }
